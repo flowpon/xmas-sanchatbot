@@ -2,7 +2,7 @@
 
 ## ファイル移動
 ```
-cd xmas-xanchatbot
+cd xmas-sanchatbot
 ```
 
 ## 初回に行うコマンド
