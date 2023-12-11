@@ -4,16 +4,17 @@ import  "./top.css"
 export default function Top() {
     return (
      <>
-      <h1>
-        Merry<br></br>
-        Chiristmas<br></br>
-        With lots of love.
-      </h1>
-      <Image
-        src='/xmastree.jpg'
-        layout='fill'
-        alt='top image'
-      />
+      <div className="container">
+        <div className='desgin-box'>
+          <img src='/xmastree.jpg' className="w-3/5 title-image"/>
+          <h1 className='title'>
+            Merry<br></br>
+            Chiristmas<br></br>
+            With lots of love.
+          </h1>
+        </div>
+      </div>
+      
       <p>クリスマスは、愛と平和のメッセージを伝える日でもあります。<br></br>
         あなたは誰に感謝の気持ちを伝えますか？<br></br>
         私たちは、あなたにこのメッセージを贈ります。
