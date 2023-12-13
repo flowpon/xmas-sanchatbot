@@ -4,10 +4,11 @@ h1 {
     text-shadow: #FC0 1px 0 10px;;
     position: absolute;
     top: 50%;
-    transform: translate(-30%, -50%);
+    transform: translate(-25%, -50%);
 }
 
 .container {
+    max-width: 1980px;
     position: relative;
 }
 
@@ -22,4 +23,10 @@ h1 {
     width: 60%;
     height: auto;
     margin-left: auto;
+}
+
+.main-image {
+    width: 40%;
+    height: auto;
+    margin-right: auto;
 }

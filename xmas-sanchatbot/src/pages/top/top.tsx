@@ -24,7 +24,7 @@ export default function Top() {
         そして良い一年をお過ごしください。<br></br>
         Merry Christmas!!
       </p>
-      <img src='xmaspresent.jpg'></img>
+      <img src='/xmaspresent.jpg' className="w-3/5 main-image"/>
       <h2>
         私たちもあなたに何か贈りたくて、<br></br>
         クスッと少しでも笑顔になれるような<br></br>
