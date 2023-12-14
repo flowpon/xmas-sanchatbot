@@ -1,5 +1,5 @@
 h1 {
-    font-size: 5vmax;
+    font-size: 4.5vmax;
     color: rgb(255, 255, 179);
     text-shadow: #FC0 1px 0 10px;;
     position: absolute;
@@ -23,6 +23,17 @@ h1 {
     width: 60%;
     height: auto;
     margin-left: auto;
+}
+
+.present {
+    position: relative;
+}
+
+.present-box {
+margin-right: auto;
+background-color: #17184B;
+width: 80%;
+padding: 20px 0;
 }
 
 .main-image {
