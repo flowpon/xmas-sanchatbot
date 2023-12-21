@@ -1,10 +1,13 @@
 h1 {
-    font-size: 4.5vmax;
-    color: rgb(255, 255, 179);
-    text-shadow: #FC0 1px 0 10px;;
+    font-size: 4.3vmax;
+    /* color: rgb(255, 196, 77); */
+    color: #E7DBDC;
+    text-shadow: rgb(255, 204, 0) 1px 0 10px;
     position: absolute;
     top: 50%;
     transform: translate(-25%, -50%);
+    letter-spacing: 0.5vw;
+    -webkit-text-stroke: 0.7px #6C2735;
 }
 
 .container {
@@ -27,17 +30,48 @@ h1 {
 
 .present {
     position: relative;
+    padding: 0 0 150px 0;
 }
 
-.present-box {
-margin-right: auto;
-background-color: #17184B;
-width: 80%;
-padding: 20px 0;
-}
-
-.main-image {
+.present-image {
     width: 40%;
     height: auto;
     margin-right: auto;
 }
+
+h2 {
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.main {
+    text-align: center;
+    margin: 15vw;
+    padding: 50px 0 150px 0;
+}
+
+.main-text {
+    padding: 100px 0 200px 0;
+    font-size: 1.5vw;
+    letter-spacing: 0.5vw;
+    font-weight: bold;
+}
+
+.sub-text {
+    padding: 200px 0 100px 0;
+    font-size: 1.5vw;
+    letter-spacing: 0.5vw;
+    line-height: 5vw;
+    color: #E7DBDC;
+    text-shadow: #661021 1px 0 10px;
+    font-weight: bold;
+}
+
+div {
+    font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','Georgia',sans-serif;
+    color: #6C2735;
+}
+
+.wrapper {
+    background: linear-gradient(to bottom, #6C2735, #E7DBDC);
+}           
