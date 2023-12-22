@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "devh": "next dev -H 0.0.0.0"
   },
   "dependencies": {
     "next": "14.0.3",
