@@ -70,9 +70,9 @@ export default function Message() {
         {
           display.map((data, index) => {
             if(data.user == "santa") {
-              return <SantaMessage key={index} message={data.message}/>
+              return <div className='santa-message-box'><p className='santa-message'>{data.message}</p></div>
             } else {
-              return <MyMessage key={index} message={data.message} /> 
+              return <div className='my-message-box'><p className='my-message'>{data.message}</p></div>
             }
           })
         }
@@ -88,23 +88,3 @@ export default function Message() {
     </>
   )
 }
-
-export function MyMessage({message}: Message) {
-  return(
-    <>
-      <div className='my-message-box'><p className='my-message'>{message}</p></div>
-    </>
-  )
-}
-
-export function SantaMessage({message}: Message) {
-  return(
-    <>
-      <div className='santa-message-box'><p className='santa-message'>{message}</p></div>
-    </>
-  )
-}
-
-/**
- * Sets a var `--visual-viewport-height` to the `<html>` element.
- */
