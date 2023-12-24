@@ -70,9 +70,9 @@ export default function Message() {
         {
           display.map((data, index) => {
             if(data.user == "santa") {
-              return <div className='santa-message-box'><p className='santa-message'>{data.message}</p></div>
+              return <div className='santa-message-box' key={index}><p className='santa-message'>{data.message}</p></div>
             } else {
-              return <div className='my-message-box'><p className='my-message'>{data.message}</p></div>
+              return <div className='my-message-box' key={index}><p className='my-message'>{data.message}</p></div>
             }
           })
         }
