@@ -38,7 +38,7 @@ export default function Top() {
               ちょっとしたプレゼントを作りました。<br></br>
             </h2>
           </div>
-          <a href="#" className="btntextchange">
+          <a href="./message" className="btntextchange">
             <span>ここを押してね</span>
             <span>Ho!Ho!Ho!</span>
           </a>
