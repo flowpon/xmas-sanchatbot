@@ -10,6 +10,10 @@ type MessageBox = {
   message: string
 }
 
+type Message = {
+  message: string
+}
+
 export default function Message() {
   const [userMessage, setUserMessage] = useState("");
   const [display, setDisplay] = useState<MessageBox[]>([]);
@@ -85,7 +89,7 @@ export default function Message() {
   )
 }
 
-export function MyMessage({message}: any) {
+export function MyMessage({message}: Message) {
   return(
     <>
       <div className='my-message-box'><p className='my-message'>{message}</p></div>
@@ -93,7 +97,7 @@ export function MyMessage({message}: any) {
   )
 }
 
-export function SantaMessage({message}: any) {
+export function SantaMessage({message}: Message) {
   return(
     <>
       <div className='santa-message-box'><p className='santa-message'>{message}</p></div>
