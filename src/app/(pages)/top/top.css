@@ -1,0 +1,122 @@
+.wrapper {
+    background: linear-gradient(to bottom, #6C2735, #E7DBDC);
+    font-family: 'Yu Mincho Light','游明朝体','Georgia',sans-serif;
+    text-align: right;
+} 
+
+.container {
+    max-width: 1980px;
+    position: relative;
+}
+
+.desgin-box {
+    margin-left: auto;
+    background-color: #D9D9D9;
+    width: 80%;
+    padding: 30px 0;
+}
+
+.title-image {
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+}
+
+h1 {
+    font-size: 4.3vmax;
+    color: #E7DBDC;
+    text-shadow: rgba(255, 204, 0, 0.822) 1px 0 10px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-25%, -50%);
+    letter-spacing: 0.5vw;
+    -webkit-text-stroke: 0.7px #6C2735;
+    text-align: left;
+}
+
+.main {
+    text-align: center;
+    margin: 15vw;
+    padding: 50px 0 150px 0;
+}
+
+.main-text {
+    padding: 100px 0 200px 0;
+    font-size: 3vw;
+    letter-spacing: 0.5vw;
+    font-weight: bold;
+    color: #6C2735;
+    text-shadow:  #ffffff 1px 0 10px;
+}
+
+.sub-text {
+    padding: 200px 0 100px 0;
+    font-size: 2vw;
+    letter-spacing: 0.5vw;
+    line-height: 5vw;
+    color: #E7DBDC;
+    text-shadow: #661021 1px 0 10px;
+    font-weight: bold;
+}
+
+.present {
+    position: relative;
+    padding: 0 0 50px 0;
+}
+
+.present-image {
+    width: 40%;
+    height: auto;
+    margin-right: auto;
+}
+  
+h2 {
+    font-size: 2vw;
+    font-weight: bold;
+    color: #6C2735;
+    text-align: left;
+}
+
+.btntextchange{
+	position: relative;
+	border: 1px solid #525954;
+	border-radius:30px;
+    min-width: 210px;
+	padding: 15px;
+    text-align: center;
+	display: inline-block;
+    text-decoration: none;
+    color: #3a4259;
+    outline: none;
+    transition: all .2s;
+    margin: 25px;
+}
+
+.btntextchange:hover{
+  background:#3a4259;
+  color:#fff;
+}
+
+.btntextchange span{
+	position: absolute;
+	left: 50%;
+	top:50%;
+    transform:translate(-50%,-50%);
+    width: 150px;
+    margin: 0 auto;
+    transition: all .5s;
+	display: block;
+	white-space: nowrap;
+}
+
+.btntextchange span:nth-child(2){
+	opacity:0;
+}
+
+.btntextchange:hover span:nth-child(1){
+	opacity:0;
+}
+
+.btntextchange:hover span:nth-child(2){
+	opacity:1;
+}
