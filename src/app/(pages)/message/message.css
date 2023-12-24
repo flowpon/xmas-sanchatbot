@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "imperialScript";
+    src: url("../../../fonts/ImperialScript-Regular.ttf") format("truetype")
+}
+
+body {
+    background-color: rgb(235, 235, 235);
+}
+
+.message-body {
+    max-height: calc(var(--visual-viewport-height) - 16px);
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+
+.font-desgin {
+    font-size: 4.5vmax;
+    font-family: "imperialScript", Imperial Script;
+}
+
+.my-message-box {
+    margin: 10px;
+    text-align: right;
+}
+
+.my-message {
+    text-align: left;
+    overflow-wrap: break-word;
+    display: inline-block;
+    max-width: 70%;
+    background-color: white;
+    border-radius: 10px 10px 0px 10px;
+    padding: 5px 10px;
+}
+
+.santa-message-box {
+    margin: 10px;
+    text-align: left;
+}
+
+.santa-message {
+    text-align: left;
+    word-break: break-all;
+    display: inline-block;
+    max-width: 70%;
+    background-color: rgb(253, 193, 193);
+    border-radius: 10px 10px 10px 0px;
+    padding: 5px 10px;
+}
