@@ -4,7 +4,7 @@ type MessageResponse = {
 
 export async function getSantaMessage(message: string): Promise<string> {
     console.log(JSON.stringify({ message }));
-    const santaMessage = await fetch("http://116.82.203.135/", {
+    const santaMessage = await fetch("https://116.82.203.135/", {
         method: "POST",
         headers: { "Content-Type": "application/json", },
         body: JSON.stringify({ message })
