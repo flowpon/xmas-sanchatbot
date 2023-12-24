@@ -7,9 +7,13 @@ body {
     background-color: rgb(235, 235, 235);
 }
 
+.message-body {
+    max-height: calc(var(--visual-viewport-height) - 16px);
+}
+
 footer{
     width: 100%;
-    position: sticky;
+    position: fixed;
     bottom: 0;
     text-align: center;
 }
