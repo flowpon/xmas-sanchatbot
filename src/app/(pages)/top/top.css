@@ -1,44 +1,70 @@
 .wrapper {
   background: linear-gradient(to bottom, #6c2735, #e7dbdc);
-  font-family: "Yu Mincho Light", "游明朝体", "Georgia", sans-serif;
-  text-align: right;
+  font-family: "Yu Mincho Light", "游明朝体", "Georgia", serif;
+  text-align: center; /* 中央寄せ */
+  overflow-x: hidden;
 }
 
 .container {
-  max-width: 100%;
-  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 0 1rem;
   box-sizing: border-box;
+  position: relative;
 }
 
 .desgin-box {
-  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
   background-color: #d9d9d9;
-  width: 80%;
-  padding: 30px 0;
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
 }
 
-.title-image {
-  width: 60%;
+.present-box {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  background-color: #d9d9d9;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.title-image,
+.present-image {
+  max-width: 100%;
+  width: 40%;
+  max-width: 400px;
   height: auto;
-  margin-left: auto;
+  display: block;
+  margin: 0 auto;
 }
 
+/* タイトル文字 */
 h1 {
-  font-size: 4vw;
+  font-size: 5vw; /* デフォルトはビューポート幅に応じたサイズ */
   color: #e7dbdc;
   text-shadow: rgba(255, 204, 0, 0.822) 1px 0 10px;
-  position: absolute;
-  top: 50%;
-  transform: translate(-25%, -50%);
+  margin-top: 2rem;
   letter-spacing: 0.5vw;
   -webkit-text-stroke: 0.7px #6c2735;
   text-align: left;
+  position: static;
+  transform: none;
+  flex: 1;
 }
 
+/* メインコンテンツ */
 .main {
   text-align: center;
-  margin: 15vw 0;
+  margin: 5vw 0;
   padding: 50px 0 150px 0;
 }
 
@@ -53,26 +79,36 @@ h1 {
   padding: 100px 0 50px 0;
 }
 
+/* プレゼントセクション */
 .present {
   position: relative;
   padding: 0 0 50px 0;
 }
 
-.present-image {
-  width: 80%;
-  display: block;
-  margin: 0 auto;
-}
-
 h2 {
-  font-size: 1.2rem;
-  text-align: center;
+  font-size: 1.5rem;
+  text-align: left;
+  flex: 1;
+  margin: 0;
+  padding: 0 1rem;
 }
 
+/* ボタン */
 .btntextchange {
-  min-width: 160px;
-  padding: 12px;
-  margin: 20px auto;
+  min-width: 140px;
+  padding: 12px 16px;
+  margin: 20px 50px 0 50px;
+  display: block;
+  cursor: pointer;
+  background-color: #6c2735;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  float: none;
 }
 
 .btntextchange:hover {
@@ -81,11 +117,19 @@ h2 {
 }
 
 .btntextchange span {
-  width: 120px;
+  display: inline-block;
+  transition: opacity 0.3s ease;
+  position: relative;
+  z-index: 1;
 }
 
 .btntextchange span:nth-child(2) {
   opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
 }
 
 .btntextchange:hover span:nth-child(1) {
@@ -94,4 +138,57 @@ h2 {
 
 .btntextchange:hover span:nth-child(2) {
   opacity: 1;
+}
+
+/* メディアクエリ: モバイル～タブレット対応 */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 8vw; /* 小さい画面では少し大きめに */
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .desgin-box,
+  .present-box {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+  }
+
+  .title-image,
+  .present-image {
+    width: 90%;
+    max-width: none;
+  }
+
+  .btntextchange {
+    float: none;
+    margin: 20px auto 0 auto;
+  }
+
+  h2 {
+    padding: 1rem;
+  }
+}
+
+/* PC以上の画面 */
+@media screen and (min-width: 769px) {
+  h1 {
+    font-size: 4rem; /* PCは固定サイズで大きく */
+    margin-top: 4rem;
+    text-align: left;
+  }
+
+  .desgin-box,
+  .present-box {
+    flex-direction: row !important;
+    align-items: center !important;
+    text-align: left;
+  }
+
+  .title-image,
+  .present-image {
+    width: 40%;
+    max-width: 400px;
+  }
 }
